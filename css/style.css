@@ -90,12 +90,25 @@ p {
 }
 
 .btn {
+    position: relative;
     padding: 24px 64px;
     background: linear-gradient(#C73B0A, #532742);
     border-radius: 60px;
     color: white;
     font-size: 1.5rem;
     position: relative;
+    border: none;
+}
+
+.btn::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 45%;
+    left: 85%;
+    background: url('../images/Vector1.png') no-repeat;
 }
 
 .desktop-text {
